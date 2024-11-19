@@ -1,0 +1,62 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: bestfriend
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+  kakao:
+    auth:
+      client: ${spring.kakao.auth.client}
+      redirect-url: ${spring.kakao.auth.redirect-url}
+      user-info-url: ${spring.kakao.auth.user-info-url}
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${spring.mail.username}
+    password: ${spring.mail.password}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  data:
+    redis:
+      host: ${spring.data.redis.host}
+      port: ${spring.data.redis.port}
+      duration: ${spring.data.redis.duration}
+jwt:
+  access:
+    expiration : ${jwt.access.expiration}
+  secret-key: ${jwt.secret-key}
+naver:
+  client-id: ${naver.client-id}
+  client-secret: ${naver.client-secret}
+  news-search-api: ${naver.news-search-api}
+open-ai:
+  api-key: ${open-ai.api-key}
+  image-api-key: ${open-ai.image-api-key}
+  text-generate-api: ${open-ai.text-generate-api}
+  image-generate-api: ${open-ai.image-generate-api}
+flask:
+  request:
+    url: ${flask.request.url}
+s3:
+  access-key: ${s3.access-key}
+  secret-key: ${s3.secret-key}
+  bucket-name: ${s3.bucket-name}
+  region: ${s3.region}
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  default-consumes-media-type: application/json
+  default-produces-media-type: application/json
+  swagger-ui:
+    operations-sorter: alpha
+    tags-sorter: alpha
+    path: /swagger-ui.html
+  use-fqn: true

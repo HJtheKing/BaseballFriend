@@ -1,0 +1,17 @@
+{
+  "appId": "com.ssafy-A505.baseball-friend",
+  "files": ["dist-electron", "dist-react", "public"],
+  "extraResources": ["dist-electron/preload.cjs", "src/ui/assets/**"],
+  "compression": "store",
+  "icon": "./BaseballFriend.png",
+  "mac": {
+    "target": "dmg"
+  },
+  "linux": {
+    "target": "AppImage",
+    "category": "Utility"
+  },
+  "win": {
+    "target": ["portable", "msi"]
+  }
+}

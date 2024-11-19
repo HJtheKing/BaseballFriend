@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'Jua';
+  src: url('../fonts/Jua-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SingleDay';
+  src: url('../fonts/SingleDay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Athletic';
+  src: url('../fonts/Athletic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Galmuri';
+  src: url('../fonts/Galmuri7.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+h1 {
+  text-align: center;
+  font-family: 'Jua';
+}
+
+h2 {
+  color: #545454;
+
+  font-family: 'Jua';
+}
+
+.Jua {
+  font-family: 'Jua';
+}
+
+.Galmuri {
+  font-family: 'Galmuri';
+}
+
+.title {
+  font-size: 28px;
+}
+
+.logo-small {
+  color: #074ca1;
+  border: 2.5px solid #ffffff;
+  text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+  font-family: 'Jua';
+  font-size: 4px;
+}
+
+.english {
+  font-family: Athletic;
+}
+
+.cFont {
+  text-align: center;
+  font-family: 'SingleDay';
+}
+
+.text-center {
+  text-align: center;
+}

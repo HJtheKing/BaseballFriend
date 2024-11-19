@@ -1,0 +1,95 @@
+.sidebar {
+  width: 40px;
+  height: 100%;
+  background-color: #d9d9d9;
+  border-right: 2px black dashed;
+  display: flex;
+  flex-direction: column;
+  position: sticky; /* 스크롤 시 요소 고정 */
+  top: 0; /* 화면 상단에 고정 */
+  padding-top: 10px;
+  -webkit-app-region: drag;
+  z-index: 9999;
+}
+
+.sidebar div {
+  width: 36px;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+
+.content {
+  width: 100%;
+  /* padding: 0 20px 0 20px; */
+}
+
+.my-svg {
+  overflow: visible;
+  transition: fill 0.3s ease;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+  margin: auto;
+}
+
+.my-svg.active path {
+  fill: black;
+  animation: rotation 0.4s ease-in-out;
+  animation-iteration-count: 1;
+  transform-origin: center;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.infi-rotate {
+  animation: rotation 0.7s linear infinite;
+}
+
+.my-svg path {
+  fill: #898989;
+}
+
+.my-svg:hover path {
+  fill: #545454;
+}
+
+.my-svg.my-svg.active:hover path {
+  fill: black;
+}
+
+/* 툴팁 */
+.tooltip {
+  position: absolute;
+  visibility: hidden;
+  width: 80px;
+  background-color: rgb(91, 91, 92);
+  color: #fff;
+  text-align: center;
+  border-radius: 50px;
+  padding: 2px;
+  top: 0%;
+  transform: translateX(55%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* 툴팁 : 말풍선 처럼 꼬리 설정 */
+.tooltip::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: 95%;
+  margin-top: -9px;
+  border-width: 8px;
+  border-color: transparent rgb(91, 91, 92) transparent transparent;
+}
+
+.group:hover .tooltip {
+  visibility: visible; /* 호버 시 보이도록 */
+  opacity: 1; /* 호버 시 불투명하게 */
+}

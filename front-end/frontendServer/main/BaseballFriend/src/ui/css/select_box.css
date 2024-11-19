@@ -1,0 +1,60 @@
+/* SelectBox.css */
+.select-box {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  font-size: 12px;
+  border-radius: 10px;
+  font-family: 'Jua';
+  margin: auto 0;
+  text-align: center;
+}
+
+.select-box__selected {
+  padding: 3px 10px;
+  border: 2px solid #9fa0ab;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 15px;
+}
+
+.select-box__options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* border: 3px solid #9fa0ab; */
+  border-top: none;
+  position: absolute;
+  width: 100%;
+  background: white;
+  z-index: 10;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+/* 스크롤 바 스타일링 */
+.select-box__options::-webkit-scrollbar {
+  width: 6px; /* 스크롤 바 너비 조정 */
+}
+
+.select-box__options::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.select-box__options::-webkit-scrollbar-thumb {
+  background: #898989;
+  border-radius: 10px;
+}
+
+.select-box__options::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.select-box__option {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.select-box__option:hover {
+  background-color: #f0f0f0;
+}

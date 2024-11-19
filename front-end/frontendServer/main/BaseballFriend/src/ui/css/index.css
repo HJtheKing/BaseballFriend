@@ -1,0 +1,89 @@
+@import url('./layout.css');
+@import url('./font.css');
+@import url('./button.css');
+@import url('./toggle_button.css');
+@import url('./toggle_button2.css');
+@import url('./sidebar.css');
+@import url('./prediction_button.css');
+@import url('./select_box.css');
+@import url('./balloon.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+div {
+  box-sizing: border-box;
+}
+img {
+  object-fit: cover;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.inter {
+  font-family: 'Inter';
+}
+
+.round {
+  border: 0.5px solid;
+  border-radius: 5px;
+}
+
+.character {
+  margin: auto 0;
+}
+
+.my-container {
+  display: flex;
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+}
+
+.MainLogo {
+  width: 100%;
+  height: 100%;
+}
+
+.MainLogo div {
+  width: 100%;
+  justify-self: center;
+}
+
+.MainLogo div img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.stadium {
+  -webkit-app-region: no-drag;
+}
+
+#clickableObject {
+  pointer-events: auto;
+}
+
+/* 클릭이 통과되지 않을 컴포넌트에 적용할 CSS */
+
+.interaction {
+  -webkit-app-region: no-drag; /* 마우스 이벤트를 통과시키지 않음 */
+}

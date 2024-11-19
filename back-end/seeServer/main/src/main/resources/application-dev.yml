@@ -1,0 +1,28 @@
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${MYSQL_SERVER}/best_friend?useSSL=true&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: ${MYSQL_USERNAME}
+    password: ${MYSQL_PASSWORD}
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+
+kafka:
+  consumer:
+    bootstrap-servers: ${BOOTSTRAP_SERVER}
+
+jwt:
+  secret-key: ${JWT_SECRET_KEY}
+
+
+redis:
+  host: ${REDIS_HOST}
+  port: ${REDIS_PORT}
+
+server:
+  port: 8081

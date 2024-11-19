@@ -1,0 +1,8 @@
+.env
+.idea
+.gradle
+HELP.md
+venv
+src/__pycache__
+static/__pycache__
+.vscode

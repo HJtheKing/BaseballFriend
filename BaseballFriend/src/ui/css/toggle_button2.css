@@ -1,0 +1,64 @@
+.toggle-container2 {
+  position: relative;
+  box-sizing: border-box;
+  width: 60px;
+  height: 30px;
+  background-color: #b7b7b7; /* 초기 상태 색상 */
+  border-radius: 15px;
+  border: solid #9fa0ab 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Jua';
+  margin: auto 0;
+}
+
+.toggle-container2::before {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url('../assets/imgs/colored_face_emoji.png'); /* ON 이미지 경로 */
+  content: '';
+  width: 20px; /* 이미지의 너비 */
+  height: 20px; /* 이미지의 높이 */
+  background-size: contain; /* 이미지 크기 조절 */
+  background-repeat: no-repeat; /* 이미지 반복 방지 */
+}
+
+.toggle-container2::after {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  content: '';
+  width: 20px; /* 이미지의 너비 */
+  height: 20px; /* 이미지의 높이 */
+  background-image: url('../assets/imgs/dotted_face_emoji.png'); /* OFF 이미지 경로 */
+  background-size: contain; /* 이미지 크기 조절 */
+  background-repeat: no-repeat; /* 이미지 반복 방지 */
+}
+
+.toggle-container2.on {
+  background-color: #ffe297; /* 애니메이션 없이 색상 변경 */
+}
+
+.toggle-container2.on .toggle-button2 {
+  transform: translateX(28px); /* 애니메이션 없이 위치 변경 */
+}
+
+.toggle-container2.off .toggle-button {
+  transform: translateX(0); /* 애니메이션 없이 위치 변경 */
+}
+
+.toggle-button2 {
+  position: absolute;
+  top: 0.5px;
+  left: 1px;
+  width: 24px;
+  height: 24px;
+  border-radius: 11px;
+  background-color: white;
+  z-index: 1;
+  box-shadow: 0.3px 0.3px #9fa0ab;
+  transition: transform 0.3s ease;
+}

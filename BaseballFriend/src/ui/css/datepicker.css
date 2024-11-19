@@ -1,0 +1,56 @@
+.datePicker {
+  font-size: 20px;
+  color: #545454;
+  font-family: 'Jua';
+  z-index: 50;
+  width: 130px;
+  padding-left: 25px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  outline: none;
+  caret-color: transparent;
+}
+
+.react-datepicker__input-container::before {
+  content: '\📅';
+  position: absolute;
+  left: 10px;
+}
+.react-datepicker__day-name,
+.react-datepicker__day {
+  color: #7a7a7a !important;
+}
+.react-datepicker__header {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.react-datepicker__day--today {
+  background-color: rgb(214, 214, 214) !important;
+  color: rgb(67, 67, 67) !important;
+  border-radius: 100% !important;
+}
+.react-datepicker__day--selected {
+  border-radius: 100% !important;
+  background-color: #586abd !important;
+  color: rgb(255, 255, 255) !important;
+  font-weight: bolder;
+}
+.react-datepicker__day:hover {
+  border-radius: 100% !important;
+  background-color: #c4dfff !important;
+  color: white !important; /* hover 시 글자 색상 */
+}
+.react-datepicker__day--keyboard-selected {
+  background-color: white !important;
+  color: #2b2b2b !important;
+}
+.react-datepicker__day--disabled:hover {
+  color: #dedede !important;
+  background-color: transparent !important; /* 배경 색상 */
+}
+.react-datepicker__day--disabled {
+  color: #dedede !important;
+  background-color: transparent !important; /* 배경 색상 */
+}

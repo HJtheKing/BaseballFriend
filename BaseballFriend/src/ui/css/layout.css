@@ -1,0 +1,51 @@
+.window-layout {
+  background-color: white;
+  height: 640px;
+  border-radius: 10px;
+  border: solid 2px black;
+  overflow: hidden;
+}
+
+.small-window-layout {
+  background-color: white;
+  height: 500px;
+  border-radius: 10px;
+  border: solid 2px black;
+  overflow: hidden;
+}
+
+.titlebar {
+  position: relative;
+  display: flex;
+  background-color: #d9d9d9;
+  height: 20px;
+  border-bottom: 2px black dashed;
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+}
+
+.titlebar-left {
+  justify-self: start;
+  height: 90%;
+  align-self: center;
+  margin-left: 2px;
+}
+
+.titlebar-right {
+  justify-self: right;
+  height: 90%;
+  align-self: center;
+  margin-left: 2px;
+}
+
+.titlebar-img {
+  height: 100%;
+}
+.window-container {
+  display: flex;
+  height: 100%;
+}
+
+.drag {
+  -webkit-app-region: drag;
+}

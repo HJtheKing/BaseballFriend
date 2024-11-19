@@ -1,0 +1,80 @@
+.toggle-container {
+  position: relative;
+  box-sizing: border-box;
+  width: 60px;
+  height: 30px;
+  background-color: #f18484; /* 초기 상태 색상 */
+  border-radius: 15px;
+  border: solid #9fa0ab 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Jua';
+  margin: auto 0;
+}
+
+.toggle-container::before {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-45%);
+  content: 'ON';
+  font-size: 10px;
+  color: #586abd;
+  transition: color 0.3s ease;
+}
+
+.toggle-container::after {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-45%);
+  content: 'OFF';
+  font-size: 10px;
+  color: #970d0b;
+  transition: color 0.3s ease;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 11px;
+  background-color: white;
+  z-index: 1;
+  box-shadow: 0.3px 0.3px #9fa0ab;
+  transition: transform 0.3s ease;
+}
+
+.toggle-container.on {
+  background-color: #c4dfff; /* 애니메이션 없이 색상 변경 */
+}
+
+.toggle-container.on .toggle-button {
+  transform: translateX(28px); /* 애니메이션 없이 위치 변경 */
+}
+
+.toggle-container.on::before {
+  color: #586abd;
+}
+
+.toggle-container.on::after {
+  color: #586abd;
+}
+
+.toggle-container.off {
+  background-color: #f18484; /* 애니메이션 없이 색상 변경 */
+}
+
+.toggle-container.off .toggle-button {
+  transform: translateX(0); /* 애니메이션 없이 위치 변경 */
+}
+
+.toggle-container.off::before {
+  color: #f18484;
+}
+
+.toggle-container.off::after {
+  color: #970d0b;
+}

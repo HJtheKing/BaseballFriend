@@ -1,0 +1,7 @@
+.balloon {
+  position: absolute;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+}

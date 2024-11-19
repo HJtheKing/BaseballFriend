@@ -1,0 +1,34 @@
+.character-position-equip {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.character-position-shop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 50%;
+}
+
+.equip-center{
+    display: flex;
+    align-items: center;
+    height: 47.5%;
+    width: 100%;
+    transition: all 0.3s, width 0.3s;
+}
+
+.shop-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 85%;
+    transition: all 0.3s, width 0.3s;
+}

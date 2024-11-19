@@ -1,0 +1,36 @@
+/* 스크롤바의 폭 너비 */
+.scrollbar {
+  padding-right: 0; /* 패딩 제거 */
+  margin-right: 0; /* 마진 제거 */
+  overflow-y: scroll; /* 세로 스크롤바 표시 */
+  height: 100vh;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(143, 143, 143, 0.2); /* 스크롤바 색상 */
+  border-radius: 10px; /* 스크롤바 둥근 테두리 */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: white; /*스크롤바 뒷 배경 색상*/
+}
+.scrollbar::-webkit-scrollbar {
+  width: 5px; /* 스크롤바 폭을 5px로 설정 */
+}
+
+/* 스크롤바의 폭 너비 */
+.scrollbarx {
+  padding-right: 0; /* 패딩 제거 */
+  margin-left: 1rem; /* 마진 제거 */
+  overflow-x: scroll; /* 세로 스크롤바 표시 */
+  width: 100%;
+}
+
+.scrollbarx::-webkit-scrollbar-thumb {
+  background: #C4DFFF; /* 스크롤바 색상 */
+  border-radius: 5px; /* 스크롤바 둥근 테두리 */
+}
+
+.scrollbarx::-webkit-scrollbar {
+  height: 7px; /* 스크롤바 폭을 5px로 설정 */
+}

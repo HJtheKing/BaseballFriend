@@ -1,0 +1,293 @@
+.pr-item {
+  width: 100%;
+  height: 80px;
+  background-color: #fffeef;
+  border-radius: 5px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding: 10px;
+  margin: 10px 0;
+  position: relative;
+  font-family: 'Jua';
+  justify-content: space-between;
+  box-sizing: border-box; 
+}
+
+.pr-cover{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  z-index: 2;
+  background-image: linear-gradient(to right, transparent, rgba(76, 76, 76, 0.4));
+}
+
+.betting-container {
+  flex-grow: 0.5;
+  width: 110px;
+  height: 100%;
+  display: flex;
+  justify-self: end;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.betting-container input {
+  background-color: transparent;
+  width: 40%;
+  height: 40%;
+  margin-top: 6px;
+  text-align: center;
+  font-size: 12px;
+  outline: none;
+}
+
+.betting-container div {
+  width: 40%;
+  height: 40%;
+  margin-top: 6px;
+  text-align: center;
+  font-size: 12px;
+  outline: none;
+}
+
+.betting-container p {
+  text-align: left;
+}
+
+.betting-container div {
+  justify-self: flex-end;
+  width: 45px;
+  margin-top: 6px;
+  height: 30px;
+
+  border-radius: 20px;
+  display: flex; /* 버튼 내부 정렬을 위해 flex 사용 */
+  align-items: center; /* 수직 중심 정렬 */
+  justify-content: center; /* 수평 중심 정렬 */
+  transition: transform 0.3s ease;
+}
+
+.betting-container div img {
+  height: 100%;
+  width: auto;
+  aspect-ratio: 1/1;
+  margin: auto;
+  transition: height 0.3s;
+}
+
+.betting-container div img:hover {
+  animation: rotate 0.3s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.betting-container button {
+  justify-self: flex-end;
+  width: 45px;
+  margin-top: 6px;
+  height: 30px;
+  background-color: #cc2525;
+  border: 1px #d9d9d9 solid;
+  border-radius: 20px;
+  display: flex; /* 버튼 내부 정렬을 위해 flex 사용 */
+  align-items: center; /* 수직 중심 정렬 */
+  justify-content: center; /* 수평 중심 정렬 */
+  transition: transform 0.3s ease;
+}
+.betting-container button:hover {
+  transform: scale(1.05);
+}
+.betting-container button:active {
+  transform: scale(0.9);
+}
+
+.betting-container button img {
+  height: 100%;
+  width: auto;
+  aspect-ratio: 1/1;
+  margin: auto;
+  transition: height 0.3s;
+}
+
+.pr-container {
+  width: 70%;
+  height: 50%;
+  position: absolute;
+  top: 30%;
+  display: flex;
+  justify-content: space-between; /* 양쪽 끝으로 배치 */
+  align-items: center; /* 세로로 가운데 정렬 */
+}
+
+.pr-left,
+.pr-right {
+  width: 44%;
+  height: 100%;
+
+  border: solid #d9d9d9 1px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s;
+}
+
+.score {
+  height: 60%;
+  aspect-ratio: 1/1;
+  width: auto;
+}
+
+.isEnd {
+  background-color: rgb(71, 71, 71);
+  border: 1px white solid;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+}
+
+.pr-left {
+  padding: 0 10px 0 5px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.pr-right {
+  padding: 0 5px 0 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.pr-right img,
+.pr-left img {
+  height: 80%;
+  object-fit: contain;
+}
+
+.pr-middle img {
+  height: 60%;
+  object-fit: contain;
+  transition: all 0.3s;
+}
+
+.pr-middle {
+  flex-grow: 1; /* 나머지 공간을 차지 */
+  height: 100%;
+  background-color: white;
+  border: solid #d9d9d9;
+  border-width: 1px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s; /* 부드러운 전환 효과 */
+}
+
+.c1 .pr-left {
+  width: 64%;
+  background-color: #074ca1;
+}
+
+.c2 .pr-left,
+.c3 .pr-left {
+  width: 24%;
+}
+
+.c3 .pr-right {
+  width: 64%;
+  background-color: #c30452;
+}
+
+.c2 .pr-right,
+.c1 .pr-right {
+  width: 24%;
+}
+
+.c2 .pr-middle {
+  background-color: #ededed;
+}
+.c2 .pr-middle img {
+  height: 90%;
+  background-color: #ededed;
+}
+
+.pr-right.win,
+.pr-middle.win,
+.pr-left.win {
+  position: relative;
+  background-color: transparent;
+  border: 1px solid black;
+  /* 배경색 설정 */
+}
+
+.pr-right.win {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.pr-left.win {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.pr-left.win::before,
+.pr-right.win::before,
+.pr-middle.win::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  background: linear-gradient(
+    45deg,
+    #ff6ec4,
+    #7873f5,
+    #1e90ff,
+    #42e695,
+    #fdd835
+  );
+  background-size: 300% 300%; /* 배경 크기를 키워서 부드러운 이동 효과 */
+  filter: blur(4px);
+  opacity: 0.5; /* 적당한 투명도 */
+  animation: rotateGradient 2s infinite linear;
+}
+
+/* 승리팀 로고&점수&이름 최상단 */
+.pr-right.win img,
+.pr-middle.win img,
+.pr-left.win img,
+.pr-right.win div,
+.pr-middle.win div,
+.pr-left.win div {
+  z-index: 10;
+}
+
+@keyframes rotateGradient {
+  0% {
+    background-position: 0% 50%; /* 시작 위치 */
+  }
+  50% {
+    background-position: 100% 50%; /* 중간 위치 */
+  }
+  100% {
+    background-position: 0% 50%; /* 끝 위치로 돌아옴 */
+  }
+}

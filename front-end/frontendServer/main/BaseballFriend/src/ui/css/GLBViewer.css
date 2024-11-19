@@ -1,0 +1,16 @@
+.ddList {
+  padding: 5px;
+  background: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  border: transparent 1px solid;
+}
+
+.ddList:hover {
+  background-color: #c4dfff;
+  color: #586abd;
+  border-color: #a2aace;
+  cursor: pointer;
+}

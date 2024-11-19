@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>BASEBALL FRIEND</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400&display=swap');
+  </style>
+</head>
+<body style=" font-family: 'Noto Sans KR', sans-serif;">
+<div style="margin: 20px;">
+  <h2 style="margin: 0; ">
+    <img src="https://i.postimg.cc/ncmRfyFC/logo.png" alt="로고" width="40px" style="vertical-align: middle;">
+    <span style="color: #074CA1; margin: 0; font-weight: bolder;"> BASEBALL FRIEND</span>
+  </h2>
+  <br>
+  <h1 style="margin: 0;">이메일 주소 인증하기</h1><br>
+  <span>인증을 위해 아래 인증 코드를 입력해주세요.</span><br>
+  <div style="display: flex; justify-content: center;">
+    <h2 style="border: none; text-decoration: underline; margin: 15px 0;" th:text="${verificationCode}"></h2>
+  </div>
+</div>
+</body>
+</html>

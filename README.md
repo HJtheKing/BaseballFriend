@@ -12,9 +12,9 @@
 
 ## ❓기획 배경
 - ***직장인 야구 팬의 증가***
-    - 올해 9월, 프로야구 출범 이후 처음으로 1000만 관중을 넘는 기록을 세우며, 최근 야구에 대한 관심이 급증하고 있습니다. 특히, 203세대의 젊은 팬층이 주요한 흥행 요인으로 작용하고 있습니다. 티켓링크에서 제공한 프로야구 입장권 연령대 비율을 보면, 20대와 30대가 전체의 65%를 차지하고 있어, 이들이 야구 관람의 주 소비층임을알 수 있습니다.
+    - 올해 9월, 프로야구 출범 이후 처음으로 1000만 관중을 넘는 기록을 세우며, 최근 야구에 대한 관심이 급증하고 있습니다. 특히, 2030세대의 젊은 팬층이 주요한 흥행 요인으로 작용하고 있습니다. 티켓링크에서 제공한 프로야구 입장권 연령대 비율을 보면, 20대와 30대가 전체의 65%를 차지하고 있어, 이들이 야구 관람의 주 소비층임을알 수 있습니다.
 - ***KBO리그와 캐릭터 콜라보***
-    - KBO리그는 다양한 인기 캐릭터와의 콜라보를 진행하며, 이는 젊은 팬들에게 큰 인기를 끌었습니다. 팬들은 자신이 좋아하는 팀의 귀여운 캐릭터 굿즈를 통해 더욱 친밀하게 야구를 즐길 수 있습니다.
+    - KBO리그는 다양한 인기 캐릭터와의 콜라보를 진행하며 젊은 팬들에게 큰 인기를 끌었습니다. 팬들은 자신이 좋아하는 팀의 귀여운 캐릭터 굿즈를 통해 더욱 친밀하게 야구를 즐길 수 있습니다.
 - ***KBO리그의 긴 경기 시간***
     - KBO에 따르면 2024시즌 정규 이닝의 평균 경기 시간은 약 3시간 10분입니다. 이는 바쁜 직장인들이 경기를 매일 보기에 어려움을 느끼게 합니다.
 <br>
@@ -102,7 +102,7 @@ BaseballFriend는 실시간으로 최소한의 필수 야구 정보를 제공하
 
 **(FE)**
 
-- 일렉트론 스토어와 api를 활용하여 액세서리 구매 시 바로 옷장에 반영이 되며, 반영에서 착용 후 확정 버튼을 누를 시 메인 캐릭터 (투명 창의 캐릭터)에 실시간 반영되도록 설정했습니다.
+- 일렉트론 스토어와 API를 활용하여 액세서리 구매 시 바로 옷장에 반영이 되며, 반영에서 착용 후 확정 버튼을 누를 시 메인 캐릭터 (투명 창의 캐릭터)에 실시간 반영되도록 설정했습니다.
 
 **(BE)**
 
@@ -190,6 +190,7 @@ BaseballFriend는 실시간으로 최소한의 필수 야구 정보를 제공하
 <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white">
 <img src="https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=Electron&logoColor=white">
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white">
+<img src="https://img.shields.io/badge/Zustand-433e38?style=flat-square&logoColor=white">
 <img src="https://img.shields.io/badge/Blender-E87D0D?style=flat-square&logo=Blender&logoColor=white">
 <img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=Three.js&logoColor=white">
 

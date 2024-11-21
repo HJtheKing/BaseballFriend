@@ -1,6 +1,6 @@
 <div align="center">
 <a href="https://drive.google.com/file/d/1aZ2Ey50I8RBGo6aRQkasdOjDq1BCRQN9/view">
-<img src="https://i.postimg.cc/7ZMHkxHp/BF-logo-long-1.png" alt="exe" width="300"/>
+<img src="https://i.postimg.cc/7ZMHkxHp/BF-logo-long-1.png" alt="exe" width="500"/>
 </a>
 </div>
 
@@ -8,7 +8,7 @@
 야구팬들을 위한 데스크탑 앱 ⚾😊 <br>
 **개발 기간** : 2024.10.14 ~ 2024.11.19 (6주)
 >
-
+<br>
 
 ## ❓기획 배경
 - ***직장인 야구 팬의 증가***
@@ -17,7 +17,7 @@
     - KBO리그는 다양한 인기 캐릭터와의 콜라보를 진행하며, 이는 젊은 팬들에게 큰 인기를 끌었습니다. 팬들은 자신이 좋아하는 팀의 귀여운 캐릭터 굿즈를 통해 더욱 친밀하게 야구를 즐길 수 있습니다.
 - ***KBO리그의 긴 경기 시간***
     - KBO에 따르면 2024시즌 정규 이닝의 평균 경기 시간은 약 3시간 10분입니다. 이는 바쁜 직장인들이 경기를 매일 보기에 어려움을 느끼게 합니다.
-
+<br>
 
 ## 💡프로젝트 소개
 
@@ -26,7 +26,7 @@ BaseballFriend은 야구 팬들이 캐릭터와 함께 야구를 즐길 수 있�
 저희는 BaseballFriend을 통해 최근 증가하는 직장인 야구 팬들을 겨냥하여, 그들의 야구 관람 경험을 한층 더 향상시키고자 합니다.
 
 BaseballFriend는 실시간으로 최소한의 필수 야구 정보를 제공하여, 접근성이 뛰어납니다. 이를 통해 사용자들은 야구에 대한 사랑과 열정을 더욱 깊게 느낄 수 있으며, 야구 경기를 관람하지 않아도 언제 어디서나 쉽게 정보를 확인하고 즐길 수 있습니다! ⚾
-
+<br>
 
 ## 📽️UCC 영상
 <div align="center">
@@ -34,6 +34,7 @@ BaseballFriend는 실시간으로 최소한의 필수 야구 정보를 제공하
 <img src="https://i.postimg.cc/RCkJCZmF/A505-PJT-1.png" alt="exe" width="500">
 </a>
 </div>
+<br>
 
 ## 💌주요 기능
 
@@ -106,7 +107,7 @@ BaseballFriend는 실시간으로 최소한의 필수 야구 정보를 제공하
 **(BE)**
 
 - 존재 여부, 보유 여부, 금액의 유무를 확인하여 구매 가능 여부를 판단하고 구매를 진행합니다.
-
+<br>
 
 ## 📺 화면 소개
 
@@ -147,7 +148,7 @@ BaseballFriend는 실시간으로 최소한의 필수 야구 정보를 제공하
 | --- |
 | <img src="https://i.postimg.cc/C18Ccr7K/image.gif" alt="중계GIF" width="300"> |
 | - 애니메이션 중계 시작 모션입니다. <br> - `[안타], [홈런], [역전]` 등의 상황에 맞는 모션과 알림을 실시간으로 전달받을 수 있습니다. |
-
+<br>
 
 ## ⚙️개발 환경
 
@@ -169,11 +170,6 @@ BaseballFriend는 실시간으로 최소한의 필수 야구 정보를 제공하
     - Python 3.10.11
     - IDE : PyCham 2024.2
 
-### 🔐Database
-
-- MySQL 8.0
-- Redis
-
 ### 💪Infra
 
 - AWS EC2 Ubuntu 20.06.6 LTS
@@ -182,6 +178,47 @@ BaseballFriend는 실시간으로 최소한의 필수 야구 정보를 제공하
 - nginx 1.18.0 (Ubuntu)
 - Jenkins 2.482
 
+### 🔐Database
+
+- MySQL 8.0
+- Redis
+<br>
+
+## 🔧기술 스택
+
+### 🖥️Frontend
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=white">
+<img src="https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=Electron&logoColor=white">
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white">
+<img src="https://img.shields.io/badge/Blender-E87D0D?style=flat-square&logo=Blender&logoColor=white">
+<img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=Three.js&logoColor=white">
+
+### 🔭Backend
+<img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat-square&logo=Spring Boot&logoColor=white">
+<img src="https://img.shields.io/badge/Spring Security-6DB33F?style=flat-square&logo=Spring Security&logoColor=white">
+<img src="https://img.shields.io/badge/Spring Validation-6DB33F?style=flat-square&logoColor=white">
+<img src="https://img.shields.io/badge/Spring Batch-6DB33F?style=flat-square&logoColor=white">
+<img src="https://img.shields.io/badge/JPA-6DB33F?style=flat-square&logoColor=white">
+<img src="https://img.shields.io/badge/JMeter-D22128?style=flat-square&logo=JMeter&logoColor=white">
+
+### 💪Infra
+<img src="https://img.shields.io/badge/Amazon EC2-FF9900?style=flat-square&logo=amazonec2&logoColor=white">
+<img src="https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=Jenkins&logoColor=white">
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white">
+<img src="https://img.shields.io/badge/Docker Compose-2496ED?style=flat-square&logoColor=white">
+
+### 🔐Database
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=MySQL&logoColor=white">
+<img src="https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=Redis&logoColor=white">
+<img src="https://img.shields.io/badge/Amazon S3-569A31?style=flat-square&logo=Amazon S3&logoColor=white">
+
+### 🗨️Communication
+<img src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=Jira&logoColor=white">
+<img src="https://img.shields.io/badge/Mattermost-0058CC?style=flat-square&logo=Mattermost&logoColor=white">
+<img src="https://img.shields.io/badge/Gitlab-FC6D26?style=flat-square&logo=Gitlab&logoColor=white">
+<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white">
+<img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=white">
+<br>
 
 ## 🦮이용 가이드
 ```
@@ -211,7 +248,7 @@ $ cd [프로젝트 디렉토리 이름]/front-end/frontServere/main
 $ npm install
 $ npm run dev
 ```
-
+<br>
 
 ## 🏠서비스 아키텍처
 <div align="center">
@@ -221,30 +258,30 @@ $ npm run dev
 - 서버 :  `Main`, `Crawling` , `SSE`
     - 부하 방지를 위해 알림과 실시간 중계 용 SSE 서버를 분리합니다.
     - 데이터 크롤링을 위해 크롤링 서버를 두고, SSE (알림) 서버와 통신하기 위해 `Kafka` 를 이용했습니다.
-
+<br>
 
 ## 🌿ERD
 <div align="center">
 <img src="https://i.postimg.cc/7P9SxT9N/image.png" alt="erd" width="500">
 </div>
+<br>
 
-
-## ⏳시퀀스 다이어그램]
+## ⏳시퀀스 다이어그램
 <div align="center">
 <img src="https://i.postimg.cc/0QfK2LYN/image-1.png" alt="시퀀스 다이어그램" width="500">
 </div>
-
+<br>
 
 ## 💣트러블 슈팅
 
 ### 야구 경기 실시간 중계 데이터 통신 문제
 
-▶️문제 상황 : 
+▶️**문제 상황**
 
 - 크롤링 서버에서 얻은 데이터를 실시간으로 SSE 서버로 전달 필요
 - 문자 중계 사이트의 구조상, 타자 이름을 페어링하는 로직으로 데이터를 처리하기 때문에 데이터 손실이 없어야 합니다.
 
-▶️해결 : 
+▶️**해결** 
 
 - 이벤트 브로커인 `Kafka`는 생산한 이벤트를 처리 후 삭제하지 않고 저장합니다.
 - `consumer`인 SSE 서버는 장애가 발생하더라도 데이터 손실 없이 다시 메세지를 수신 가능할 수 있습니다.
@@ -263,7 +300,7 @@ $ npm run dev
 ▶️**해결**
 
 - `멀티 프로세싱`으로 처리하여 여러 건의 요청이 병렬적으로 동시에 처리되도록 보장함.
-
+<br>
 
 ## 🎄프로젝트 결과 및 성과
 
@@ -281,7 +318,7 @@ $ npm run dev
 
 - AI를 활용해 매일 새벽 팀별 뉴스 요약 및 관련 이미지 생성
 - 매일 아침마다 브리핑 알람 전송을 통해 사용자가 뉴스를 읽고 당일 경기 승부예측 게임에 참여하도록 유도
-
+<br>
 
 ## 🎡추후 계획
 

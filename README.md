@@ -253,7 +253,7 @@ $ npm run dev
 
 ## 🏠서비스 아키텍처
 <div align="center">
-<img src="https://i.postimg.cc/76gM1sgv/drawio-2.jpg" alt="서비스 아키텍처" width="500">
+<img src="https://i.postimg.cc/qqvx58Tb/BF.png" alt="서비스 아키텍처" width="500">
 </div>
 
 - 서버 :  `Main`, `Crawling` , `SSE`
